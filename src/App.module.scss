@@ -12,10 +12,11 @@ body {
 }
 
 .page {
-  margin: 10vh 0;
+  margin-bottom: 12rem;
   width: 80vw;
   min-height: 80vh;
   max-width: 1536px;
+  padding-bottom: 6rem;
   background-color: $color-page;
   display: grid;
   grid-template-columns: 14rem 1fr;
@@ -53,6 +54,20 @@ body {
   display: none;
 }
 
+.gluten-announcement,
+.allergy-announcement {
+  padding-right: 12rem;
+}
+
+.gluten-announcement {
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+.allergy-announcement {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 1300px) {
   .page {
     gap: 10%;
@@ -61,7 +76,7 @@ body {
 
 @media (max-width: 1000px) {
   .page {
-    gap: 2rem;
+    gap: 6rem;
   }
 }
 
@@ -70,12 +85,12 @@ body {
     grid-template-columns: 1fr;
     gap: 0;
     padding: 0 4rem;
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .page-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-bottom: 8rem;
   }
 
   .title-wrapper-desktop {
@@ -87,7 +102,9 @@ body {
     font-size: 5rem;
     text-decoration: underline;
   }
-}
 
-@media (max-width: 480px) {
+  .gluten-announcement,
+  .allergy-announcement {
+    padding-right: 4rem;
+  }
 }

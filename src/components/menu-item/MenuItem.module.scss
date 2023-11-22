@@ -1,0 +1,41 @@
+@import "../../sass/imports";
+
+.item-wrapper {
+  margin-top: 4rem;
+}
+
+.item-name,
+.item-description {
+  font-family: $font-main;
+  font-weight: 200;
+}
+
+.item-name {
+  font-size: 3rem;
+}
+
+.item-description {
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .item-name {
+    font-size: 2.5rem;
+  }
+
+  .item-description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .item-name {
+    font-size: 3rem;
+  }
+
+  .item-description {
+    font-size: 2.5rem;
+  }
+}

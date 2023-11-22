@@ -1,0 +1,22 @@
+@import "../../sass/imports";
+
+.section {
+  margin-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+.heading {
+  font-family: $font-heading;
+  font-size: 4rem;
+}
+
+.item-name {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.item-description {
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
