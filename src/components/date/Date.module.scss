@@ -1,0 +1,19 @@
+@import "../../sass/imports";
+
+.date {
+  font-family: $font-heading;
+  font-size: 4rem;
+}
+
+@media (max-width: 1000px) {
+  .date {
+    font-family: $font-heading;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .date {
+    font-size: 3rem;
+  }
+}

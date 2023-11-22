@@ -1,0 +1,93 @@
+@import "./sass/imports";
+
+body {
+  background-color: $color-background;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+}
+
+.page {
+  margin: 10vh 0;
+  width: 80vw;
+  min-height: 80vh;
+  max-width: 1536px;
+  background-color: $color-page;
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  grid-template-areas: 1fr;
+  gap: 17.5%;
+  box-shadow: 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.title-wrapper-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: 270deg;
+  height: 100svh;
+  width: 80rem;
+  margin-left: -30rem;
+  position: sticky;
+  top: 0;
+}
+
+.title {
+  font-size: 8rem;
+  font-family: $font-heading;
+}
+
+.page-wrapper {
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.title-mobile {
+  font-family: $font-heading;
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .page {
+    gap: 10%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .page {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .page {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 4rem;
+  }
+
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-wrapper-desktop {
+    display: none;
+  }
+
+  .title-mobile {
+    display: block;
+    font-size: 5rem;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 480px) {
+}
