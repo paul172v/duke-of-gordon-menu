@@ -25,7 +25,7 @@ const Section: React.FC<SectionProps> = ({
     <section className={classes.section}>
       <h2 className={classes.heading}>
         {sectionName}
-        {sectionPrice && ` - £${sectionPrice}`}
+        {sectionPrice && ` - £${sectionPrice.toFixed(2)}`}
       </h2>
       <div>
         {menu.map((item) => (
