@@ -5,7 +5,7 @@ type MenuItem = {
 };
 
 // Function to initialize menu items
-const createMenuItems = (items): MenuItem[] => {
+const createMenuItems = (items: MenuItem[]): MenuItem[] => {
   return items.map((item) => ({
     name: item.name,
     dietary: item.dietary ?? null,

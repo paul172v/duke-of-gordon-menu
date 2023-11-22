@@ -20,18 +20,20 @@ function App() {
             sectionPrice={4.25}
             menu={menus.startersArr}
           />
-          <Section
-            sectionName="Intermediate"
-            sectionPrice={4.25}
-            menu={menus.intermediateArr}
-          />
+          {menus.intermediateArr.length > 0 && (
+            <Section
+              sectionName="Intermediate"
+              sectionPrice={null}
+              menu={menus.intermediateArr}
+            />
+          )}
           <Section
             sectionName="Main"
-            sectionPrice={4.25}
+            sectionPrice={12.5}
             menu={menus.mainsArr}
           />
           <Section
-            sectionName="Intermediate"
+            sectionName="Desserts"
             sectionPrice={4.25}
             menu={menus.dessertsArr}
           />
