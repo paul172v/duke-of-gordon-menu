@@ -37,16 +37,16 @@ const startersArr = createMenuItems([
 ]);
 
 const intermediateArr = createMenuItems([
-  {
-    name: "Roast Tomato and Basil Soup",
-    dietary: ["gf", "v"],
-    description: null,
-  },
-  {
-    name: "Refreshing Sorbet",
-    dietary: ["gf", "v"],
-    description: null,
-  },
+  // {
+  //   name: "Roast Tomato and Basil Soup",
+  //   dietary: ["gf", "v"],
+  //   description: null,
+  // },
+  // {
+  //   name: "Refreshing Sorbet",
+  //   dietary: ["gf", "v"],
+  //   description: null,
+  // },
 ]);
 
 const mainsArr = createMenuItems([
