@@ -2,11 +2,13 @@ import React from "react";
 
 import classes from "./MenuItem.module.scss";
 
-const MenuItem: React.FC<{
+interface IMenuItem {
   name: string;
-  dietary: string[] | null;
+  dietary: string[];
   description: string | null;
-}> = (props) => {
+}
+
+const MenuItem: React.FC<IMenuItem> = (props) => {
   let dietaryString: string | null;
   dietaryString = null;
   props.dietary !== null

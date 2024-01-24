@@ -17,7 +17,7 @@ const DateString: React.FC = () => {
   };
 
   const dayAbbrev: string = getDate.toDateString().substring(0, 3);
-  const day: string = dayMap[dayAbbrev] || "";
+  const day: string = dayMap[dayAbbrev];
 
   /*
 Date Logic:
@@ -27,6 +27,7 @@ The function then checks the value of j and k to determine the correct ordinal s
 - If j is 3 and k is not 13, the suffix should be "rd" (as in 3rd, 23rd). The check for k != 13 handles the special case for numbers like 13, 113, 213, etc.
 - In all other cases, the suffix should be "th". This includes numbers where j is 0, 4, 5, 6, 7, 8, 9, or any number where k is 11, 12, or 13.
 */
+
   const getDateSuffix = (date: number): string => {
     const j = date % 10,
       k = date % 100;

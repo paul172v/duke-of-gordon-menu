@@ -2,22 +2,23 @@ import React from "react";
 import classes from "./Section.module.scss";
 import MenuItem from "../menu-item/MenuItem";
 
-// Define a type for individual menu items
-type MenuItemType = {
+interface IMenuItem {
   name: string;
-  dietary: string[] | null;
+  dietary: string[];
   description: string | null;
-};
+}
 
 // Define a type for the component props
 type SectionProps = {
   sectionName: string;
+  showPrice: boolean;
   sectionPrice: number | null;
-  menu: MenuItemType[];
+  menu: IMenuItem[];
 };
 
 const Section: React.FC<SectionProps> = ({
   sectionName,
+  showPrice,
   sectionPrice,
   menu,
 }) => {
@@ -25,7 +26,9 @@ const Section: React.FC<SectionProps> = ({
     <section className={classes.section}>
       <h2 className={classes.heading}>
         {sectionName}
-        {sectionPrice && ` - £${sectionPrice.toFixed(2)}`}
+        {showPrice === true &&
+          sectionPrice !== null &&
+          ` - £${sectionPrice.toFixed(2)}`}
       </h2>
       <div>
         {menu.map((item) => (
