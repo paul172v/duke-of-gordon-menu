@@ -75,6 +75,14 @@ function App() {
         </div>
       )}
 
+      {!dataLoading && menuSettings?.menuActive === false && (
+        <div className={classes["alert-window"]}>
+          <p>
+            The online is menu is currently unavailable, please try again later.
+          </p>
+        </div>
+      )}
+
       {!dataLoading && menuSettings?.menuActive && (
         <div className={classes.page}>
           <div className={classes["title-wrapper-desktop"]}>
