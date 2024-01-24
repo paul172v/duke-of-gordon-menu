@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { PulseLoader } from "react-spinners";
 
 import classes from "./App.module.scss";
