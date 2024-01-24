@@ -78,7 +78,7 @@ function App() {
       {!dataLoading && menuSettings?.menuActive === false && (
         <div className={classes["alert-window"]}>
           <p>
-            The online is menu is currently unavailable, please try again later.
+            The online menu is currently unavailable, please try again later.
           </p>
         </div>
       )}
